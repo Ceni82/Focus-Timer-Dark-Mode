@@ -1,0 +1,191 @@
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+}
+
+:root{
+    --bgColorLigth:white;
+    --bgColorDark:black;
+    --textColorLight:#323238;
+    --textColorDark:white;
+    --controlButtons:#323238;
+    --bgButtonsColor:#17f75a;
+    --bgButtonsColorLight: #E1E1E6;
+
+    font-size: 62.5%;
+    font-family: 'Roboto', sans-serif;
+}
+
+body{
+    background-color: var(--bgColorDark);
+    color:var(--textColorDark);
+    min-height: 100vh;
+
+}
+
+
+.modeNight {
+      background-color:var(--bgColorLigth);
+      color:var(--textColorLight); 
+}
+
+
+
+
+header {
+    display:flex;
+    justify-content: end;
+    align-self: end;
+    padding:0 4rem 4.2rem 0;
+    height: 19.6rem;
+    margin-bottom: 7rem;
+
+}
+main{
+    display:flex;
+    flex-direction: column;
+    justify-self: center;
+    align-items: center;
+   
+
+}
+
+#container{
+        display:flex;
+        flex-direction: row;
+        gap:9.2rem;
+
+}
+
+
+
+#timer {
+    font-size:12.7rem;
+    font-weight: bold;
+    font-style: normal;
+    line-height: 14.8rem;
+    text-transform: uppercase;
+
+    display: flex;
+    justify-content: space-around;
+
+    margin-bottom: 1.6rem;
+
+  }
+
+
+
+
+#cards {
+    width: 35rem;
+    height: 33.6rem;
+  
+    
+}
+
+#cards button{
+    width: 13.8rem;
+    height: 15.2rem;
+    border-radius: 2.4rem;
+    border: none;
+    background-color: var(--bgButtonsColorLight);
+    margin-right: 3.2rem;
+    margin-bottom: 3.2rem;
+    cursor: pointer;
+
+    
+}
+
+
+
+#cards.colorCard button {
+    background-color: grey;
+    border:#E1E1E6 1px solid;
+}
+
+#soundTree.Color, #soundRain.Color, #soundHouse.Color, #soundFire.Color {
+
+    background-color: var(--bgButtonsColor);
+    fill:aliceblue;
+}
+
+
+
+
+.modeLight path{
+    fill: white;
+}
+.modeDark path{
+    fill: black;
+}
+
+.timerControls {
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: center;
+
+   
+}
+button{
+    background-color: transparent;
+    border:none;
+    
+}
+
+#controls{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap:4.0rem;
+
+    border-radius: 9999px;
+} 
+#play.Col, #pause.Col, #stop.Col, #up.Col, #down.Col {
+    fill:var(--bgButtonsColorLight)
+}
+
+
+.hide{
+    display:none;
+}
+
+
+
+input[type="range"] {
+    -webkit-appearance: none;
+    appearance: none;
+    background: transparent;
+    cursor: pointer;
+    width: 9rem;
+    margin-top: 2rem;
+  }
+  
+  input[type="range"]::-webkit-slider-runnable-track {
+    background-color:black;
+    border-radius: 0.5rem;
+    height: 0.3rem;
+  }
+  
+  input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    margin-top: -5.4px; 
+    background-color: #000000;
+    border-radius: 8rem;
+    height: 1.4rem;
+    width: 1.4rem;
+  }
+  
+
+
+
+@media (max-width: 700px) {
+    #container {
+      flex-direction: column;
+    }
+    header{
+        margin-bottom: auto;
+    }
+  }
